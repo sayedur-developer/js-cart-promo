@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Bangla Bazar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bangla Bazar</a>
+            <a href="index.html" class="btn btn-light">
+                <i class="bi bi-arrow-left"></i> Continue Shopping
+            </a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="card shadow">
+            <div class="card-header bg-white">
+                <h3 class="mb-0">Your Shopping Cart</h3>
+            </div>
+            <div class="card-body">
+                <div id="cart-items" class="mb-4"></div>
+
+                <!-- Promo Code Section -->
+                <div class="promo-section mb-4 p-3 bg-light rounded">
+                    <h5 class="mb-3">Apply Promo Code</h5>
+                    <div class="input-group">
+                        <input type="text" id="promo-code" class="form-control" placeholder="Enter promo code">
+                        <button class="btn btn-outline-primary" onclick="CartManager.applyPromoCode()">
+                            Apply
+                        </button>
+                    </div>
+                    <div id="promo-message" class="mt-2 small"></div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary p-4 bg-light rounded">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Subtotal:</span>
+                            <span>৳<span id="cart-subtotal">0.00</span></span>
+                        </div>
+                        <div class="d-flex justify-content-between text-danger">
+                            <span>Discount:</span>
+                            <span>-৳<span id="cart-discount">0.00</span></span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between fw-bold">
+                            <span>Total:</span>
+                            <span>৳<span id="cart-total">0.00</span></span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button id="clear-cart" class="btn btn-danger me-2" disabled>
+                            <i class="bi bi-trash"></i> Clear Cart
+                        </button>
+                        <button id="checkout-btn" class="btn btn-success" disabled>
+                            <i class="bi bi-bag-check"></i> Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

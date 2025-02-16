@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-card {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    min-height: 3rem;
+}
+
+.product-price {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.cart-drawer {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 350px;
+    background: white;
+    border-radius: 8px;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+.cart-container:hover .cart-drawer {
+    display: block;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-remove {
+    color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.btn-remove:hover {
+    color: white;
+    background-color: #dc3545;
+}
+
+.btn-remove i {
+    font-size: 1.1rem;
+}
+
+/* Add promo code styling */
+.promo-section {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+#promo-message {
+    min-height: 1.5rem;
+    font-size: 0.9em;
+}
+
+.text-discount {
+    color: #28a745;
+}
+
+.text-error {
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .cart-drawer {
+        width: 100%;
+        right: -10px;
+    }
+    
+    .quantity-controls {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}

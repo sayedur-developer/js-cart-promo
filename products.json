@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Leather Wallet",
+        "description": "Genuine leather men's wallet",
+        "price": 45000,
+        "image": "images/wallet.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Wireless Earbuds",
+        "description": "Bluetooth 5.0 with charging case",
+        "price": 129900,
+        "image": "images/earbuds.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Cotton T-Shirt",
+        "description": "Premium quality cotton t-shirt",
+        "price": 8990,
+        "image": "images/tshirt.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Smart Watch Pro",
+        "description": "AMOLED display with health monitoring",
+        "price": 159900,
+        "image": "images/smartwatch.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Espresso Machine",
+        "description": "15-bar pressure professional coffee maker",
+        "price": 349900,
+        "image": "images/espresso.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Running Shoes",
+        "description": "Breathable mesh with cushion technology",
+        "price": 89900,
+        "image": "images/shoe.jpg"
+    }
+]
